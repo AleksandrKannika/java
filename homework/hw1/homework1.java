@@ -8,8 +8,8 @@ public class homework1 {
 
         int num = 6;
         System.out.println(trianglenum(num));
-        
-        sort(arr, size);
+
+        heapSort(arr, size);
         printArr(arr);
     }
 
@@ -19,7 +19,7 @@ public class homework1 {
         return res;
     }
 
-    public static void sort(int[] a, int n) {
+    public static void heapSort(int[] a, int n) {
 
         pre(a, n);
 
