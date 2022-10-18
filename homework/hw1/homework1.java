@@ -8,6 +8,7 @@ public class homework1 {
 
         int num = 6;
         System.out.println(trianglenum(num));
+        
         sort(arr, size);
         printArr(arr);
     }
