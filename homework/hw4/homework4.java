@@ -1,6 +1,5 @@
 package homework.hw4;
 
-import homework.hw2.homework2;
 
 public class homework4 {
     public static void main(String[] var) {
@@ -21,8 +20,7 @@ public class homework4 {
     }
 
     static int division(int[] arr, int from, int to) {
-        homework2 x = new homework2();
-
+        
         int l = from;
         int r = to;
         int compare = arr[(int) (Math.random() * to)];
@@ -34,7 +32,7 @@ public class homework4 {
                 r--;
             
             if (l <= r) {
-                x.swap(arr, r, l);
+                swap(arr, r, l);
                 l++;
                 r--;
             }
@@ -49,6 +47,12 @@ public class homework4 {
             sb.append(a[i] + "\t");
         }
         return sb.toString();
+    }
+
+    static void swap(int[] a, int i1, int i2) {
+        int temp = a[i1];
+        a[i1] = a[i2];
+        a[i2] = temp;
     }
 
 }
